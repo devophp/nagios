@@ -4,16 +4,16 @@ This library lets you run Nagios checks and parse the output from your PHP appli
 
 ## Example:
 
-    ```php
-    $nagioschecker = new \Devophp\Component\Nagios\Checker();
-    $nagioschecker->autoDetectPluginPath();
-    
-    $response = $nagioschecker->check('users', '-w 3 -c 5');
+```PHP
+$nagioschecker = new \Devophp\Component\Nagios\Checker();
+$nagioschecker->autoDetectPluginPath();
 
-    echo "Statuscode: " . $response->getStatusCode() . ' (' . $response->getStatusText() . ')' . "\n";
-    echo "ServiceOutput: " . $response->getServiceOutput() . "\n";
-    echo "ServicePerfData: " . $response->getServicePerfData() . "\n";
-    ```
+$response = $nagioschecker->check('users', '-w 3 -c 5');
+
+echo "Statuscode: " . $response->getStatusCode() . ' (' . $response->getStatusText() . ')' . "\n";
+echo "ServiceOutput: " . $response->getServiceOutput() . "\n";
+echo "ServicePerfData: " . $response->getServicePerfData() . "\n";
+```
 
 ## Included console tool
 
