@@ -1,0 +1,15 @@
+{
+    "name": "devophp/nagios",
+    "license": "MIT",
+    "type": "project",
+    "description": "Execute nagios checks and parse the output with PHP classes",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/console": "2.6.*@dev"
+    },
+    "extra": {
+    }
+}
